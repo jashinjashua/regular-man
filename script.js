@@ -67,24 +67,24 @@ function movePlayer() {
     if (keys[38] && player.y > 120) {
         player.y -= player.speed;
         player.frameY = 3;
-        player.moving = true;
+   
     }
 
     if (keys[37] && player.x > 0) {
         player.x -= player.speed;
         player.frameY = 1;
-        player.moving = true;
+   
     }
 
     if (keys[40] && player.y < canvas.height - player.height) {
         player.y += player.speed;
         player.frameY = 0;
-        player.moving = true;
+ 
     }
     if (keys[39] && player.x < canvas.width - player.width) {
         player.x += player.speed;
         player.frameY = 2;
-        player.moving = true;
+    
     }
 }
 
